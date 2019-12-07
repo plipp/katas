@@ -1,7 +1,7 @@
 # Property Based Testing by Example - Learning Path
 
 If you want to learn more about [Property Based Testing](https://blogs.oracle.com/javamagazine/know-for-sure-with-property-based-testing)
-using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
+using the [jqwik library](https://jqwik.net/docs/current/user-guide.html)
 
 * check out this repository (`master` branch)
 * set it up (see `Setup in IntelliJ`)
