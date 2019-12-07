@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'quickcheck'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext.junitJupiterVersion = '5.5.2'
+ext.jqwikVersion = '1.2.0'
+
+dependencies {
+    testImplementation "net.jqwik:jqwik:${jqwikVersion}"
+    testImplementation("org.junit.jupiter:junit-jupiter:${junitJupiterVersion}")
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
