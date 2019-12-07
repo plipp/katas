@@ -20,12 +20,16 @@ using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
 
 ## Property-Based-Testing Intro
 
-1. Checkout the `01-fizzbuzz-JUNIT5`-branch with a sample solution [kata.FizzBuzz](./1-FizzBuzz/src/main/java/kata/FizzBuzz.java) 
+1. Checkout the `01-fizzbuzz`-branch with a sample solution [kata.FizzBuzz](./1-FizzBuzz/src/main/java/kata/FizzBuzz.java) 
    and take a look in the corresponding [junit5-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzTest.java)).<br>
    **Question**: All fine?
 
-2. TODO ... go on ..
-    
+2. Now lets have a look in the corresponding [jqwik-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzJKwiqTest.java)):
+  * Remove the @Disabled annotation at the `FizzBuzzJKwiqTest` class the and run it
+  * Note, 
+    * that the `@Example`s correspond to `normal`junit-`@Test`s
+    * how `@Properties` and generators (`@Provider, Arbitraries, @ForAll`) work.
+  * Try the exercises (see `TODO EXERCISE`)  
 
 ## Links
 
