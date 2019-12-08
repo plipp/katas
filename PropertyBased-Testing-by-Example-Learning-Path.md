@@ -35,7 +35,7 @@ using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
 
 ### caesarshift-cipher sample
 
-1. Checkout the `01-caesar`-branch with a sample solution [kata.CaesarShiftCipher](./2-CesarCipher/src/main/java/kata/CaesarShiftCipher.java) 
+1. Checkout the `02-caesar`-branch with a sample solution [kata.CaesarShiftCipher](./2-CesarCipher/src/main/java/kata/CaesarShiftCipher.java) 
    and take a look in the corresponding [junit5-test](./2-CesarCipher/src/test/java/kata/CaesarShiftCipherTest.java).<br>
 
 2. Now lets have a look in the corresponding [jqwik-test](./2-CesarCipher/src/test/java/kata/CaesarShiftCipherJQwikTest.java)):
