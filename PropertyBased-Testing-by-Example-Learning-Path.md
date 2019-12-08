@@ -24,8 +24,8 @@ using the [jqwik library](https://jqwik.net/docs/current/user-guide.html)
    and take a look in the corresponding [junit5-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzTest.java)).<br>
    **Question**: All fine?
 
-2. Now lets have a look in the corresponding [jqwik-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzJKwiqTest.java)):
-  * Remove the @Disabled annotation at the `FizzBuzzJKwiqTest` class the and run it
+2. Now lets have a look in the corresponding [jqwik-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzJQwikTest.java)):
+  * Remove the @Disabled annotation at the `FizzBuzzJQwikTest` class the and run it
   * Note, 
     * that the `@Example`s correspond to `normal`junit-`@Test`s
     * how `@Properties` and generators (`@Provider, Arbitraries, @ForAll`) work.

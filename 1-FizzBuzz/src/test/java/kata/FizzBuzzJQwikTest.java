@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SuppressWarnings("unused")
 @Disabled
-class FizzBuzzJKwiqTest implements AutoCloseable {
+class FizzBuzzJQwikTest implements AutoCloseable {
 
   private FizzBuzz fizzBuzz;
 
   // setup
-  FizzBuzzJKwiqTest() {
+  FizzBuzzJQwikTest() {
     fizzBuzz = new FizzBuzz();
   }
 
@@ -42,18 +42,18 @@ class FizzBuzzJKwiqTest implements AutoCloseable {
   }
 
   @Property
-  void shouldEndWithBuzzIfDivisibleBy7(@ForAll("divisibleBy7") int i) {
+  void shouldEndWithBuzzIfDivisibleBy5(@ForAll("divisibleBy5") int i) {
     final String result = fizzBuzz.convert(i);
-    assertTrue(result.endsWith("buzz"), result);
+    assertTrue(result.endsWith("fizz"), result+ " does not end with 'fizz'");
   }
 
   @Provide
-  private Arbitrary<Integer> divisibleBy7() {
-    return Arbitraries.integers().between(1, 100).filter(i -> i % 7 == 0);
+  private Arbitrary<Integer> divisibleBy5() {
+    return Arbitraries.integers().between(1, 100).filter(i -> i % 5 == 0);
   }
 
   // TODO EXERCISE
-  // Write Properties and Provider for "shouldStartWithBuzzIfDivisibleBy5" and "shouldReturnTheNumberIfNotDivisibleBy5Or7"
+  // Write Properties and Provider for "shouldStartWithBuzzIfDivisibleBy7" and "shouldReturnTheNumberIfNotDivisibleBy5Or7"
   // and fix the bug
 
   @Override
