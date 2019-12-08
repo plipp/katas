@@ -20,6 +20,8 @@ using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
 
 ## Property-Based-Testing Intro
 
+### fizzbuzz sample
+
 1. Checkout the `01-fizzbuzz`-branch with a sample solution [kata.FizzBuzz](./1-FizzBuzz/src/main/java/kata/FizzBuzz.java) 
    and take a look in the corresponding [junit5-test](./1-FizzBuzz/src/test/java/kata/FizzBuzzTest.java)).<br>
    **Question**: All fine?
@@ -30,6 +32,18 @@ using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
     * that the `@Example`s correspond to `normal`junit-`@Test`s
     * how `@Properties` and generators (`@Provider, Arbitraries, @ForAll`) work.
   * Try the exercises (see `TODO EXERCISE`)  
+
+### caesarshift-cipher sample
+
+1. Checkout the `01-caesar`-branch with a sample solution [kata.CaesarShiftCipher](./2-CesarCipher/src/main/java/kata/CaesarShiftCipher.java) 
+   and take a look in the corresponding [junit5-test](./2-CesarCipher/src/test/java/kata/CaesarShiftCipherTest.java).<br>
+
+2. Now lets have a look in the corresponding [jqwik-test](./2-CesarCipher/src/test/java/kata/CaesarShiftCipherJQwikTest.java)):
+  * Check for the `TODO EXERCISE` comments
+  * Write tests corresponding to the junit5-`CaesarShiftCipherTest`s. Decide, whether you better use 
+    * a single `@Example` or
+    * a `@Property` and generators (`@Provider, Arbitraries, @ForAll`).
+  Especially think about the shifts 1, 1+26, -1, -1-27... (see `@CsvSource`s)
 
 ## Links
 
