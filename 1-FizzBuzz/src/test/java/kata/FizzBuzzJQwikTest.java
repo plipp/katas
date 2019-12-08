@@ -42,9 +42,9 @@ class FizzBuzzJQwikTest implements AutoCloseable {
   }
 
   @Property
-  void shouldEndWithBuzzIfDivisibleBy5(@ForAll("divisibleBy5") int i) {
+  void shouldStartWithFizzIfDivisibleBy5(@ForAll("divisibleBy5") int i) {
     final String result = fizzBuzz.convert(i);
-    assertTrue(result.endsWith("fizz"), result+ " does not end with 'fizz'");
+    assertTrue(result.startsWith("fizz"), result+ " does not start with 'fizz'");
   }
 
   @Provide
@@ -53,7 +53,7 @@ class FizzBuzzJQwikTest implements AutoCloseable {
   }
 
   // TODO EXERCISE
-  // Write Properties and Provider for "shouldStartWithBuzzIfDivisibleBy7" and "shouldReturnTheNumberIfNotDivisibleBy5Or7"
+  // Write Properties and Provider for "shouldEndWithBuzzIfDivisibleBy7" and "shouldReturnTheNumberIfNotDivisibleBy5Or7"
   // and fix the bug
 
   @Override
