@@ -9,13 +9,14 @@ using the [qwik library](https://jqwik.net/docs/current/user-guide.html)
 
 ## Setup in IntelliJ
 
-1. If you use IntelliJ, create a new empty Java project and 
+1. If you use IntelliJ, create a new empty Java8 project and 
 
     * add [fizzBuzz](./1-FizzBuzz) 
     * add [cesarCipher](./2-CesarCipher)
       as modules to your project.
 
-2. Run the existing tests in both modules to get all libraries in place and tho see, that the initial setup works.<br>
+2. Run the existing tests in both modules (`./1-FizzBuzz/src/test/java/`, `./2-CesarCipher/src/test/java/kata/CaesarShiftCipherTest.java`) to get all libraries in place and to see, 
+   that the initial setup works properly.<br>
    **Expected outcome**: All should build and tests should be green.
 
 ## Property-Based-Testing Intro
